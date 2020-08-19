@@ -1,9 +1,11 @@
-# Symfony 5 docker containers
+# Symfony 5 docker container with PHP 7.2 MariaDB Nginx and Symfony application
 
-A Proof-of-concept of a running Symfony 5 application inside containers
+#FIRST YOU HAVE TO INSTALL DOCKER and DOCKER-Compose
 
 ```
-git clone git@gitlab.com:martinpham/symfony-5-docker.git
+#NEXT: 
+RUN
+git clone https://github.com/nerees/symfony-5-docker.git
 
 cd symfony-5-docker
 
@@ -12,26 +14,18 @@ cd docker
 docker-compose up
 ```
 
-## Compose
 
-### Database (MariaDB)
-
-...
-
-### PHP (PHP-FPM)
-
-Composer is included
 
 ```
-docker-compose run php-fpm composer 
+ 
 ```
 
-To run fixtures
+# To run fixtures
+Regenerates 100 demo products for application
 
 ```
-docker-compose run php-fpm bin/console doctrine:fixtures:load
+Make sure you are on src catalog, where your symfony application is and
+RUN:
+bin/console doctrine:fixtures:load
 ```
 
-### Webserver (Nginx)
-
-...# symfony-5-docker
