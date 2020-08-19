@@ -3,7 +3,7 @@
 THIS PROJECT USES LHMT API for forecast
 https://api.meteo.lt/
 
-1. YOU HAVE TO INSTALL DOCKER and DOCKER-Compose
+1. YOU HAVE TO INSTALL DOCKER and DOCKER-COMPOSE
 ```
 https://docs.docker.com/engine/install/
 https://docs.docker.com/compose/install/
@@ -33,12 +33,37 @@ RUN DOCKER
 docker-compose up
 
 ```
-4. TRY
+4. TRYOUT
 ```
 After some time you should see JSON message on your localhost
 http://localhost/
 
 "Welcome to API ..."
+
+----------------
+php curl example:
+
+<?php
+
+$curl = curl_init();
+
+curl_setopt_array($curl, array(
+  CURLOPT_URL => "http://localhost/api/products/recommended/telsiai",
+  CURLOPT_RETURNTRANSFER => true,
+  CURLOPT_ENCODING => "",
+  CURLOPT_MAXREDIRS => 10,
+  CURLOPT_TIMEOUT => 0,
+  CURLOPT_FOLLOWLOCATION => true,
+  CURLOPT_HTTP_VERSION => CURL_HTTP_VERSION_1_1,
+  CURLOPT_CUSTOMREQUEST => "GET",
+));
+
+$response = curl_exec($curl);
+
+curl_close($curl);
+echo $response;
+
+-------------------------------
 
 ```
 
