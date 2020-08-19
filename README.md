@@ -93,7 +93,9 @@ bin/console doctrine:fixtures:load
 
 7. HOSTING ON HEROKU
 ```
-Pending
+https://fathomless-wildwood-19798.herokuapp.com/
+ended with error ... :(  [remote rejected] master -> master (pre-receive hook declined)
+Pending .... 
 ```
 
 8. MORE INFO SOON
