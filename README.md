@@ -43,12 +43,18 @@ http://localhost/
 ```
 
 5. API 
+```
+The api GET method with url "http://localhost/api/products/recommended/{location}"
 
-The api GET method with url "http://localhost/api/products/recommended/telsiai"
+put city name instad of {location}, for example:
+"http://localhost/api/products/recommended/telsiai"
+
+You should get JSON with 10 recomended products by the weather
+{"city":"telsiai","current_weather":"sunny","recommended_products":[{"sku":"11830689","name":"repellat","price":75.23},{"sku":"43310166","name":"in","price":75.54},{"sku":"92710467","name":"totam","price":18.53},{"sku":"07048258","name":"earum","price":29.77},{"sku":"07220586","name":"et","price":37.57},{"sku":"43361328","name":"sint","price":85.55},{"sku":"49828511","name":"quis","price":50.62},{"sku":"25504286","name":"numquam","price":96.47},{"sku":"77369291","name":"voluptatem","price":84.46},{"sku":"47433588","name":"placeat","price":34.13}]}
  
 ```
 
-6 To run fixtures
+6 TO RUN fixtures
 ```
 Regenerates 100 demo products for application
 
