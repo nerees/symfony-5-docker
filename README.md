@@ -92,9 +92,7 @@ bin/console doctrine:fixtures:load
 ```
 7. SECURITY
 ```
-For access only from trusted domains or only from localhost please change .env file TRUSTED_HOSTS line
-
-TRUSTED_HOSTS=
+Maybe CORS :/ pending .. :0
 
 ```
 8. HOSTING ON HEROKU
