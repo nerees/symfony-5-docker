@@ -90,15 +90,21 @@ bin/console doctrine:fixtures:load
 
 
 ```
+7. SECURITY
+```
+For access only from trusted domains or only from localhost please change .env file TRUSTED_HOSTS line
 
-7. HOSTING ON HEROKU
+TRUSTED_HOSTS=
+
+```
+8. HOSTING ON HEROKU
 ```
 https://fathomless-wildwood-19798.herokuapp.com/
 ended with error ... :(  [remote rejected] master -> master (pre-receive hook declined)
 Pending .... 
 ```
 
-8. MORE INFO SOON
+9. MORE INFO SOON
 ```
 still completing some things ... :-)
 Hope You like it
