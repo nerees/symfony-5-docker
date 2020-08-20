@@ -63,4 +63,21 @@ class ProductsController extends AbstractController
         $output = array("city" => $city, "current_weather" => $weather, "recommended_products" => $data);
         return new JsonResponse($output, Response::HTTP_OK);
     }
+
+    //returns all products from database, no limits.
+
+    /**
+     * @Route("/api/products", name="allproducts", methods={"GET"})
+     */
+    public function getAllProducts(): JsonResponse
+    {
+        $products = $this->productsRepository->findAll();
+        $data = [];
+
+        foreach ($products as $product) {
+            $data[] = $product->toArray();
+        }
+        
+        return new JsonResponse($data, Response::HTTP_OK);
+    }
 }
