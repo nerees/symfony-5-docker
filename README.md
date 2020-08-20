@@ -77,6 +77,9 @@ curl_close($curl);
 echo $response;
 
 -------------------------------
+
+Added functionality get all products from api with no limits
+GET http://localhost/api/products
  
 ```
 
