@@ -95,6 +95,9 @@ bin/console doctrine:fixtures:load
 ```
 7. SECURITY
 ```
+User authirization .Is it needed?
+
+Symfony security package .. 
 Maybe CORS :/ pending .. :0
 
 ```
